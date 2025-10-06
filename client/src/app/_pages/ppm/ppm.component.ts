@@ -17,6 +17,6 @@ export class PpmComponent implements OnInit {
 
   showPPM(){window.open("http://ppm.surgical-outcomes.nl")}
 
-  goBack(){window.history.back()}
+  
 
 }

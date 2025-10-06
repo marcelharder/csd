@@ -17,14 +17,12 @@ export class CardiohelpComponent implements OnInit {
   ngOnInit() {
   }
   showCHPPT() {
-    this.alertify.show(
-      "Show the Cardiohelp powerpoint, in another window.");
     this.pres.getPresenation("cda").subscribe((next) => {
       window.open(next);
     })
   }
   showCHDemo() {
-    window.open("http://206.189.4.65:8047") 
+    window.open("http://chp.surgical-outcomes.nl"); 
     }
 
 }

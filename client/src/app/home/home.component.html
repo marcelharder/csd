@@ -6,128 +6,408 @@
     </div>
   </div>
   <div class="card-footer">
-    <accordion [closeOthers]="oneAtATime" [isAnimated]="true">
-      <accordion-group heading="Surgical Outcomes" [isOpen]="isFirstOpen">
-        <p>
-          Explore our cardiac surgery outcomes application and learn how you can
-          use this in your daily practice.
-        </p>
-        <button class="badge bg-success" (click)="showSurgicalOutcomes()">
-          Go
-        </button>
-      </accordion-group>
-      <accordion-group heading="Online Inventory of Valves">
-        <div class="card">
-          <div class="card header" style="background-color: antiquewhite">
-            <h4>
-              <span class="badge bg-primary m-2 mt-3"
-                >Online Valve Inventory</span
-              >
-            </h4>
+    <!-- Show accordion only on mobile (smaller than md breakpoint) -->
+    <div class="d-block d-md-none">
+      <accordion [closeOthers]="oneAtATime" [isAnimated]="true">
+        <accordion-group heading="Surgical Outcomes" [isOpen]="isFirstOpen">
+          <div class="card">
+            <div class="card header" style="background-color: antiquewhite">
+              <h4>
+                <span class="badge bg-primary m-2 mt-3"
+                  >Surgical Outcomes Application</span
+                >
+              </h4>
+            </div>
+            <div class="card body">
+              <accordion [closeOthers]="oneAtATime" [isAnimated]="true">
+                <accordion-group heading="Motivation" [isOpen]="isFirstOpen">
+                  This application is designed to measure the surgical outcomes
+                  for the individual cardiac surgeon. The surgeon can monitor
+                  the outcomes in real time and these data are private. Because
+                  this application is surgeon-centric the application has no
+                  dependencies on the hospital where the surgeon works. View it
+                  as a surgical logbook with advanced capabilities.
+                </accordion-group>
+                <accordion-group heading="Powerpoint">
+                  Click the button to see a Surgical Outcomes Application
+                  powerpoint presentation:
+                  <button class="badge bg-success" (click)="showSoaPPT()">
+                    Go to the powerpoint
+                  </button>
+                </accordion-group>
+                <accordion-group heading="Tutorials">
+                  <h5>
+                    <span class="badge bg-secondary m-2">
+                      There are a number of tutorials that you can follow to
+                      familiarize yourself with the application.
+                    </span>
+                  </h5>
+                  <div class="row">
+                    <div class="col-sm-6">Getting started:</div>
+                    <div class="col-sm-6">
+                      <button
+                        class="badge bg-success"
+                        (click)="showTutorial(1)"
+                      >
+                        Go
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">Configuration:</div>
+                    <div class="col-sm-6">
+                      <button
+                        class="badge bg-success"
+                        (click)="showTutorial(2)"
+                      >
+                        Go
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">Reporting:</div>
+                    <div class="col-sm-6">
+                      <button
+                        class="badge bg-success"
+                        (click)="showTutorial(3)"
+                      >
+                        Go
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">Statistics:</div>
+                    <div class="col-sm-6">
+                      <button
+                        class="badge bg-success"
+                        (click)="showTutorial(4)"
+                      >
+                        Go
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">Adding procedures:</div>
+                    <div class="col-sm-6">
+                      <button
+                        class="badge bg-success"
+                        (click)="showTutorial(5)"
+                      >
+                        Go
+                      </button>
+                    </div>
+                  </div>
+                </accordion-group>
+                <accordion-group heading="Demo">
+                  <div>
+                    All the demo's use this username (demo@fancy.nl) and
+                    password (Control1)
+                  </div>
+                  Click the button to see the application in action:
+                  <button class="badge bg-warning" (click)="showSoaDemo()">
+                    Go to the demo
+                  </button>
+                </accordion-group>
+              </accordion>
+            </div>
+            <div class="card footer"></div>
           </div>
-          <div class="card body">
-            <accordion [closeOthers]="oneAtATime" [isAnimated]="true">
-              <accordion-group heading="Motivation" [isOpen]="isFirstOpen">
-                This application gives a real time overview of the available
-                prosthetic heart valves in your hospital. It allows a cardiac
-                surgeon to plan the operative procedure with the confidence that
-                the intended prosthesis is really available. On the other hand
-                it gives valve vendors a realtime overview of the location of
-                their products. This enables them to intelligently supply the
-                hospitals that they are working with.
-              </accordion-group>
-              <accordion-group heading="Powerpoint">
-                Click the button to see a Online Valve Inventory powerpoint
-                presentation:
-                <button class="badge bg-success" (click)="showOviPPT()">
-                  Go to the powerpoint
-                </button>
-              </accordion-group>
-              <accordion-group heading="Demo">
-                <div>
-                  Use this username (demovendor) and password (password)
-                </div>
-                Click the button to see the application in action:
-                <button class="badge bg-warning" (click)="showOviDemo()">
-                  Go to the demo
-                </button>
-              </accordion-group>
-            </accordion>
+        </accordion-group>
+        <accordion-group heading="Online Inventory of Valves">
+          <div class="card">
+            <div class="card header" style="background-color: antiquewhite">
+              <h4>
+                <span class="badge bg-primary m-2 mt-3"
+                  >Online Valve Inventory</span
+                >
+              </h4>
+            </div>
+            <div class="card body">
+              <accordion [closeOthers]="oneAtATime" [isAnimated]="true">
+                <accordion-group heading="Motivation" [isOpen]="isFirstOpen">
+                  This application gives a real time overview of the available
+                  prosthetic heart valves in your hospital. It allows a cardiac
+                  surgeon to plan the operative procedure with the confidence
+                  that the intended prosthesis is really available. On the other
+                  hand it gives valve vendors a realtime overview of the
+                  location of their products. This enables them to intelligently
+                  supply the hospitals that they are working with.
+                </accordion-group>
+                <accordion-group heading="Powerpoint">
+                  Click the button to see a Online Valve Inventory powerpoint
+                  presentation:
+                  <button class="badge bg-success" (click)="showOviPPT()">
+                    Go to the powerpoint
+                  </button>
+                </accordion-group>
+                <accordion-group heading="Demo">
+                  <div>
+                    Use this username (demovendor) and password (password)
+                  </div>
+                  Click the button to see the application in action:
+                  <button class="badge bg-warning" (click)="showOviDemo()">
+                    Go to the demo
+                  </button>
+                </accordion-group>
+              </accordion>
+            </div>
+            <div class="card footer"></div>
           </div>
-          <div class="card footer"></div>
-        </div>
-        <!-- <p>Access our real-time inventory management system for cardiac valves, featuring detailed specifications and availability information.</p>
-          <button class="badge bg-success" (click)="showInventory()">Go</button> -->
-      </accordion-group>
-      <accordion-group heading="CardioHelp">
-        <p>
-          A specialized tool designed to assist cardiac care professionals in
-          the management of the data generated by the CardioHelp device
-        </p>
-        <button class="badge bg-success" (click)="showCardioHelp()">Go</button>
-      </accordion-group>
-      <accordion-group heading="WaitingList">
-        <p>
-          Manage and monitor patient waiting lists efficiently with our
-          specialized waiting list management system.
-        </p>
-        <button class="badge bg-success" (click)="showWaitingList()">Go</button>
-      </accordion-group>
-      <accordion-group heading="PPM">
-        <div class="card">
-          <div class="card header" style="background-color: antiquewhite">
-            <h4>
-              <span class="badge bg-primary m-2 mt-3"
-                >Patient Prosthesis Mismatch (PPM)</span
-              >
-            </h4>
+          <!-- <p>Access our real-time inventory management system for cardiac valves, featuring detailed specifications and availability information.</p>
+            <button class="badge bg-success" (click)="showInventory()">Go</button> -->
+        </accordion-group>
+        <accordion-group heading="CardioHelp">
+          <div class="card">
+            <div class="card header" style="background-color: antiquewhite">
+              <h4><span class="badge bg-primary m-2 mt-3">Cardiohelp</span></h4>
+            </div>
+            <div class="card body">
+              <accordion [closeOthers]="oneAtATime" [isAnimated]="true">
+                <accordion-group heading="Motivation" [isOpen]="isFirstOpen">
+                  This application records the outcomes of the use of the
+                  CardioHelp machine This CardioHelp machine gives
+                  extracorporeal support for, amongst others, pulmonary and
+                  cardiac conditions. The CardioHelp machine collects a huge
+                  amount of hemodynamic, operational and alarm conditions, up to
+                  54 variables every 5 minutes. To manage these data it is very
+                  helpful to have a dedicated, cloud based, web application.
+                  With these data neatly stored in the cloud we can learn to
+                  finetune the indications for extracorporeal support. These
+                  data are anonymously collected and therefore there are no
+                  patient privacy concerns.
+                </accordion-group>
+                <accordion-group heading="Powerpoint">
+                  Click the button to see a CardioHelp powerpoint presentation:
+                  <button class="badge bg-success" (click)="showCHPPT()">
+                    Go to the powerpoint
+                  </button>
+                </accordion-group>
+                <accordion-group heading="Demo">
+                  <div>
+                    All the demo's use this username (demo) and password
+                    (password)
+                  </div>
+                  Click the button to see the application in action:
+                  <button class="badge bg-warning" (click)="showCHDemo()">
+                    Go to the demo
+                  </button>
+                </accordion-group>
+              </accordion>
+            </div>
+            <div class="card footer"></div>
           </div>
-          <div class="card body">
-            <accordion [closeOthers]="oneAtATime" [isAnimated]="true">
-              <accordion-group heading="Motivation" [isOpen]="isFirstOpen">
-                Patient Prosthesis Mismatch (PPM) occurs when the effective
-                orifice area of a prosthetic heart valve is too small in
-                relation to the required aortic valve area, leading to higher
-                than expected gradients across the valve. The required aortic
-                valve area is determined based on the patient's individual
-                characteristics and expressed in a newly defined algorithm that
-                takes in the gender, the age, the height and the weight of the
-                patient. This condition can result in suboptimal hemodynamic
-                performance and may impact patient outcomes following valve
-                replacement surgery.
-              </accordion-group>
-              <accordion-group heading="Powerpoint">
-                Click the button to see a powerpoint presentation about Patient
-                Prosthesis Mismatch:
-                <button class="badge bg-success" (click)="showPPMPowerpoint()">
-                  Go to the powerpoint
-                </button>
-              </accordion-group>
-              <accordion-group heading="To the App">
-                Click the button to see the PPM application in action:
-                <button class="badge bg-success" (click)="showPPM()">Go</button>
-              </accordion-group>
-            </accordion>
+        </accordion-group>
+        <accordion-group heading="PPM">
+          <div class="card">
+            <div class="card header" style="background-color: antiquewhite">
+              <h4>
+                <span class="badge bg-primary m-2 mt-3"
+                  >Patient Prosthesis Mismatch (PPM)</span
+                >
+              </h4>
+            </div>
+            <div class="card body">
+              <accordion [closeOthers]="oneAtATime" [isAnimated]="true">
+                <accordion-group heading="Motivation" [isOpen]="isFirstOpen">
+                  Patient Prosthesis Mismatch (PPM) occurs when the effective
+                  orifice area of a prosthetic heart valve is too small in
+                  relation to the required aortic valve area, leading to higher
+                  than expected gradients across the valve. The required aortic
+                  valve area is determined based on the patient's individual
+                  characteristics and expressed in a newly defined algorithm
+                  that takes in the gender, the age, the height and the weight
+                  of the patient. This condition can result in suboptimal
+                  hemodynamic performance and may impact patient outcomes
+                  following valve replacement surgery.
+                </accordion-group>
+                <accordion-group heading="Powerpoint">
+                  Click the button to see a powerpoint presentation about
+                  Patient Prosthesis Mismatch:
+                  <button
+                    class="badge bg-success"
+                    (click)="showPPMPowerpoint()"
+                  >
+                    Go to the powerpoint
+                  </button>
+                </accordion-group>
+                <accordion-group heading="To the App">
+                  Click the button to see the PPM application in action:
+                  <button class="badge bg-success" (click)="showPPM()">
+                    Go
+                  </button>
+                </accordion-group>
+              </accordion>
+            </div>
           </div>
-        </div>
 
-        <!--  <p>Our highly innovative Patient Prosthesis Mismatch Calculator is uniquely based on an expected Aortic valve area and not on the BSA/BMI</p>
-          <button class="badge bg-success" (click)="showPPM()">Go</button> -->
-      </accordion-group>
-      <accordion-group heading="About Us">
-        <p>
-          Learn more about our team of dedicated professionals and our mission
-          in cardiac healthcare software development.
-        </p>
-        <button class="badge bg-success" (click)="showAbout()">Go</button>
-      </accordion-group>
-      <accordion-group heading="Contact">
-        <p>
-          Get in touch with our team for support, inquiries, or collaboration
-          opportunities.
-        </p>
-        <button class="badge bg-success" (click)="showContact()">Go</button>
-      </accordion-group>
-    </accordion>
+          <!--  <p>Our highly innovative Patient Prosthesis Mismatch Calculator is uniquely based on an expected Aortic valve area and not on the BSA/BMI</p>
+            <button class="badge bg-success" (click)="showPPM()">Go</button> -->
+        </accordion-group>
+        <accordion-group heading="Referrals">
+          <div class="card">
+            <div class="card header" style="background-color: antiquewhite">
+              <h4>
+                <span class="badge bg-primary m-2 mt-3">Waitinglist</span>
+              </h4>
+            </div>
+            <div class="card body">
+              <accordion [closeOthers]="oneAtATime" [isAnimated]="true">
+                <accordion-group heading="Motivation" [isOpen]="isFirstOpen">
+                  This application was developed to streamline a referral for
+                  cardiac surgery. All the information about the patient is
+                  presented to the surgeon. This information includes the
+                  angiogram, echo's and other additional investigations that are
+                  relevant to the referral. With all the information about a
+                  potential surgical case in one place, the surgeon can quickly
+                  estimate the surgical risk and envisioned benefit of the
+                  surgical procedure. The main benefit of this application is
+                  the significant reduction of administrative tasks that
+                  accompany a referral for cardiac surgery.
+                </accordion-group>
+                <accordion-group heading="Powerpoint">
+                  Click the button to see the powerpoint presentation of the
+                  waitinglist application:
+                  <button class="badge bg-success" (click)="showWLPPT()">
+                    Go to the powerpoint
+                  </button>
+                </accordion-group>
+                <accordion-group heading="Demo">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      There are two sides of this application, at one side we
+                      find the physician who refers a patient to the hospital
+                      that is going to operate on the patient. On the other side
+                      we can see the heartteam in the receiving hospital that is
+                      going to establish the indication for surgery and plan the
+                      date of surgery for this patient
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-12">
+                      You can login as a referring physician: username: joyce
+                      password: password
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      You can login as a member of the heartteam in the
+                      receiving hospital: username: megan password: password
+                    </div>
+                  </div>
+
+                  <hr />
+                  <div>
+                    Click the button to see the application in action:
+                    <button class="badge bg-warning" (click)="showWLDemo()">
+                      Go to the demo
+                    </button>
+                  </div>
+                </accordion-group>
+              </accordion>
+            </div>
+            <div class="card footer"></div>
+          </div>
+        </accordion-group>
+        <accordion-group heading="About Us">
+          <div class="card">
+            <div class="card header" style="background-color: antiquewhite">
+              <h4>
+                <span class="badge bg-primary m-2 mt-3">About</span>
+              </h4>
+            </div>
+            <div class="card body">
+              <div class="row mt-5 mb-5">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card header">
+                      <h5>
+                        <span class="badge bg-secondary"
+                          >Yes, we have a mission too</span
+                        >
+                      </h5>
+                    </div>
+                    <div class="card body">
+                      <span class="m-2"
+                        >Cardiac Software Developers is a small company that
+                        develops highly specialized medical software. We have a
+                        strong background in medical (Cardiac Surgical) practice
+                        and we enjoy making software that helps clinicians
+                        instead of just obstructing time tested and battle
+                        proven traditions. Join us in the struggle to get the
+                        software we deserve ...</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card header">
+                      <h5><span class="badge bg-secondary">Credits</span></h5>
+                    </div>
+                    <div class="card body">
+                      <span class="m-2"
+                        >The surgical outcomes application was heavily inspired
+                        by dr. Gert Kootstra, a dutch cardiac surgeon in Breda,
+                        The Netherlands.<br />
+                        A word of thanks goes to Bert Elberse of Fysicon Oss,
+                        The Netherlands.<br />
+                        My friends and cardiac surgeon partners Dr. Abdullah
+                        Ashmeg and Dr. Andrew Allan should be admired for their
+                        patience in listening to me going on about "My
+                        Program"...</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card footer"></div>
+          </div>
+        </accordion-group>
+        <accordion-group heading="Contact">
+          <div class="card">
+            <div class="card header" style="background-color: antiquewhite">
+              <h4><span class="badge bg-primary m-2 mt-3">Contact</span></h4>
+            </div>
+            <div class="card body">
+              <div class="row">
+                <div class="col-sm-12 mt-3" style="text-align: center">
+                  <h6>Cardiacsurgery Software Developers</h6>
+                  <br />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12">
+                  <div id="main" align="left" class="m-2">
+                    <div style="display: inline-block">
+                      <img
+                        src="../assets/images/harder.jpg"
+                        width="100%"
+                        height="auto"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  &nbsp; Almere-Haven <br />
+                  &nbsp; The Netherlands <br />
+                  &nbsp; mail: marcelharder@protonmail.com
+                </div>
+              </div>
+            </div>
+            <div class="card footer"></div>
+          </div>
+        </accordion-group>
+      </accordion>
+    </div>
+
+    <!-- You might want to add alternative content for desktop view here -->
+    <div class="d-none d-md-block">
+      <!-- Add desktop-specific content here -->
+    </div>
   </div>
 </div>

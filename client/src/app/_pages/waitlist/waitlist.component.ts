@@ -22,6 +22,6 @@ export class WaitlistComponent implements OnInit {
   }
   
   showWLDemo(){
-    window.open("http://206.189.4.65:8083") 
+    window.open("http://wait.surgical-outcomes.nl"); 
   }
 }
