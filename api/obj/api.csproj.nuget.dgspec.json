@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/home/marcel/code/csd/api/api.csproj": {}
+    "/home/marcel/Downloads/csd-03-04-2023/csd/api/api.csproj": {}
   },
   "projects": {
-    "/home/marcel/code/csd/api/api.csproj": {
+    "/home/marcel/Downloads/csd-03-04-2023/csd/api/api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marcel/code/csd/api/api.csproj",
+        "projectUniqueName": "/home/marcel/Downloads/csd-03-04-2023/csd/api/api.csproj",
         "projectName": "api",
-        "projectPath": "/home/marcel/code/csd/api/api.csproj",
+        "projectPath": "/home/marcel/Downloads/csd-03-04-2023/csd/api/api.csproj",
         "packagesPath": "/home/marcel/.nuget/packages/",
-        "outputPath": "/home/marcel/code/csd/api/obj/",
+        "outputPath": "/home/marcel/Downloads/csd-03-04-2023/csd/api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/marcel/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net7.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -35,12 +35,12 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[5.6.3, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -49,7 +49,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -61,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.119/RuntimeIdentifierGraph.json"
         }
       }
     }

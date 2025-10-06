@@ -1,0 +1,14 @@
+.responsive-image {
+  display: inline-block;
+}
+
+.responsive-image img {
+  width: 75%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .responsive-image img {
+    width: 100%;
+  }
+}

@@ -19,6 +19,7 @@ import { WaitlistComponent } from './_pages/waitlist/waitlist.component';
 import { ContactComponent } from './contact/contact.component';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { CardiohelpComponent } from './_pages/cardiohelp/cardiohelp.component';
+import { PpmComponent } from './_pages/ppm/ppm.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { CardiohelpComponent } from './_pages/cardiohelp/cardiohelp.component';
       OviComponent,
       WaitlistComponent,
       ContactComponent,
-      CardiohelpComponent
+      CardiohelpComponent,
+      PpmComponent
    ],
   imports: [
     TabsModule.forRoot(),

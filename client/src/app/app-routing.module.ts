@@ -7,6 +7,7 @@ import { CardiohelpComponent } from './_pages/cardiohelp/cardiohelp.component';
 import { OviComponent } from './_pages/ovi/ovi.component';
 import { SoaComponent } from './_pages/soa/soa.component';
 import { WaitlistComponent } from './_pages/waitlist/waitlist.component';
+import { PpmComponent } from './_pages/ppm/ppm.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,11 +18,12 @@ const routes: Routes = [
   { path: 'wait', component: WaitlistComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'cardiohelp', component: CardiohelpComponent },
-  { path: '**', redirectTo: '', pathMatch: 'full' }
+  { path: 'ppm', component: PpmComponent},
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

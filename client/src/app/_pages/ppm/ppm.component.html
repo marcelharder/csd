@@ -1,0 +1,44 @@
+
+  <div class="card">
+    <div class="card header" style="background-color: antiquewhite">
+      <h4>
+        <span class="badge bg-primary m-2 mt-3"
+          >Patient Prosthesis Mismatch (PPM)</span
+        >
+      </h4>
+    </div>
+    <div class="card body">
+      <accordion [closeOthers]="oneAtATime" [isAnimated]="true">
+        <accordion-group heading="Motivation" [isOpen]="isFirstOpen">
+          Patient Prosthesis Mismatch (PPM) occurs when the effective orifice
+          area of a prosthetic heart valve is too small in relation to the
+          required aortic valve area, leading to higher than expected gradients
+          across the valve. The required aortic valve area is determined based
+          on the patient's individual characteristics and expressed in a newly
+          defined algorithm that takes in the gender, the age, the height and
+          the weight of the patient. This condition can result in suboptimal
+          hemodynamic performance and may impact patient outcomes following
+          valve replacement surgery.
+        </accordion-group>
+        <accordion-group heading="Powerpoint">
+          Click the button to see a powerpoint presentation about Patient
+          Prosthesis Mismatch:
+          <button class="badge bg-success" (click)="showPPMPowerpoint()">
+            Go to the powerpoint
+          </button>
+        </accordion-group>
+        <accordion-group heading="To the App">
+          Click the button to see the PPM application in action:
+          <button class="badge bg-success" (click)="showPPM()">Go</button>
+        </accordion-group>
+      </accordion>
+    </div>
+    <div class="card footer">
+        <div class="row">
+            <div class="col-sm-4"><span><button class="badge bg-warning ml-1" (click)="goBack()">Go back</button></span></div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+  </div>
+
