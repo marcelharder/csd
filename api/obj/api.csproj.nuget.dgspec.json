@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/marcel/Downloads/csd-03-04-2023/csd/api/api.csproj": {}
+    "/home/marcel/code/csd-26-10-2025/csd/api/api.csproj": {}
   },
   "projects": {
-    "/home/marcel/Downloads/csd-03-04-2023/csd/api/api.csproj": {
+    "/home/marcel/code/csd-26-10-2025/csd/api/api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marcel/Downloads/csd-03-04-2023/csd/api/api.csproj",
+        "projectUniqueName": "/home/marcel/code/csd-26-10-2025/csd/api/api.csproj",
         "projectName": "api",
-        "projectPath": "/home/marcel/Downloads/csd-03-04-2023/csd/api/api.csproj",
+        "projectPath": "/home/marcel/code/csd-26-10-2025/csd/api/api.csproj",
         "packagesPath": "/home/marcel/.nuget/packages/",
-        "outputPath": "/home/marcel/Downloads/csd-03-04-2023/csd/api/obj/",
+        "outputPath": "/home/marcel/code/csd-26-10-2025/csd/api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/marcel/.nuget/NuGet/NuGet.Config"

@@ -2,7 +2,7 @@ version: '3'
 services: 
   
   csd:
-    image: csd_app:v2
+    image: csd_app:v3
     ports:
      - 80:80
     networks: 

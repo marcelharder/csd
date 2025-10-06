@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oAjAT+54RFRa7Zts4hzjiYAJlNJJKWpLx9WTEIUOWMQitwUCXhSfKrHj8AX8eurEAAGeZAXc4WoPugVXCNHBOA==",
+  "dgSpecHash": "wGmARGIipr1q6NO8F2dkYqxelkogop6mLaL/MpJ/LtzdLtggHRzu7f6zY1RKsLsSYmB++hTYolrqJbUeT/TUrA==",
   "success": true,
-  "projectFilePath": "/home/marcel/Downloads/csd-03-04-2023/csd/api/api.csproj",
+  "projectFilePath": "/home/marcel/code/csd-26-10-2025/csd/api/api.csproj",
   "expectedPackageFiles": [
     "/home/marcel/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/home/marcel/.nuget/packages/microsoft.openapi/1.6.22/microsoft.openapi.1.6.22.nupkg.sha512",
